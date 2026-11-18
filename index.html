@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <title>Flappy Bird Arcade Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="arcade-cabinet">
+    <header class="arcade-header">
+      <h1>Retro Bird</h1>
+      <div class="score-board">
+        <span>Score: <strong id="currentScore">0</strong></span>
+        <span>Best: <strong id="bestScore">0</strong></span>
+      </div>
+    </header>
+    <main class="arcade-screen">
+      <canvas id="gameCanvas" width="320" height="480"></canvas>
+      <div id="overlay" class="overlay">
+        <div id="overlayContent" class="overlay-content">
+          <h2>Flappy Bird</h2>
+          <p>Press space or click to fly</p>
+          <button id="startButton" class="arcade-btn" type="button">Insert Coin</button>
+        </div>
+      </div>
+    </main>
+    <footer class="arcade-footer">
+      <p>Use Space or Click to Jump</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
